@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM Events</title>
+  </head>
+  <body>
+    <h1>This is Shawon Islam</h1>
+    <button title="This is Button" onclick="console.log(1)">Click Me</button>
+    <button onclick="document.body.style.backgroundColor='yellow'">
+      Make Yellow
+    </button>
+    <button onclick="make_red()">Make Red</button>
+    <button id="make-blue">Make Blue</button>
+    <button id="make-purple">Make Purple</button>
+    <button id="make-pink">Make Pink</button>
+    <button id="make-green">Make Green</button>
+    <button id="make-orange">Make Orange</button>
+    <!-- Call the function there on click  -->
+    <!-- Javascript Files stars here-->
+    <script src="./js/event.js"></script>
+    <script>
+      document.getElementById('make-orange').addEventListener('click',function(){
+        document.body.style.backgroundColor='orange';
+      })
+    </script>
+    <!-- Javascript Files ends here-->
+  </body>
+</html>

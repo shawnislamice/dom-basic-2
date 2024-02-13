@@ -1,0 +1,4 @@
+***When website loading then HTML documents are converted into DOM tree. 
+<button onclick="console.log(1)">Click Me</button>
+***Onclick korle kih function dekha jhabe tah bujhabe.
+

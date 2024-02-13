@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="title">Please make input</h2>
+    <input type="text" id="input-field" />
+    <button id="btn-update">Update</button>
+    <script>
+      document
+        .getElementById("btn-update")
+        .addEventListener("click", function () {
+          const inputField = document.getElementById("input-field");
+          const inputText = inputField.value;
+          const h2 = document.getElementById("title");
+          h2.innerText = inputText;
+          inputField.value=""
+        });
+    </script>
+  </body>
+</html>
